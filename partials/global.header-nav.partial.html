@@ -1,31 +1,39 @@
 <nav class="header__nav">
   <div class="header__nav-container container">
-  <div class="header__brand">
-    <img
-      src="../img/global/logo.jpg"
-      alt="Monito Logo"
-      class="header__logo"
-    />
+    <div class="header__brand">
+      <a href="../index.html" class="header__nav-logo-link"
+        ><img
+          src="../img/global/logo.jpg"
+          alt="Monito Logo"
+          class="header__logo"
+        />
+      </a>
+    </div>
+    <ul class="header__menu">
+      <li class="header__menu-item">
+        <a href="category.html" class="header__menu-link" data-proofer-ignore
+          >Category</a
+        >
+      </li>
+      <li class="header__menu-item">
+        <a href="about.html" class="header__menu-link" data-proofer-ignore
+          >About</a
+        >
+      </li>
+      <li class="header__menu-item">
+        <a href="contact.html" class="header__menu-link" data-proofer-ignore
+          >Contact</a
+        >
+      </li>
+    </ul>
+    <form class="header__search">
+      <input
+        type="text"
+        class="header__search-input"
+        placeholder="Search something here"
+      />
+      <button type="submit" class="header__search-button">🔍</button>
+    </form>
+    <button type="button" class="header__cta">Join the community</button>
   </div>
-  <ul class="header__menu">
-    <li class="header__menu-item">
-      <a href="category.html" class="header__menu-link" data-proofer-ignore>Category</a>
-    </li>
-    <li class="header__menu-item">
-      <a href="about.html" class="header__menu-link" data-proofer-ignore>About</a>
-    </li>
-    <li class="header__menu-item">
-      <a href="contact.html" class="header__menu-link" data-proofer-ignore>Contact</a>
-    </li>
-  </ul>
-  <form class="header__search">
-    <input
-      type="text"
-      class="header__search-input"
-      placeholder="Search something here"
-    />
-    <button type="submit" class="header__search-button">🔍</button>
-  </form>
-  <button type="button" class="header__cta">Join the community</button>
-</div>
 </nav>

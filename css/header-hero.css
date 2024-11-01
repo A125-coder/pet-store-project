@@ -1,7 +1,8 @@
-.hero {
-  background-color: #fdf5e6;
-}
 .hero_container {
+  background-image: url(../img/hero/hero-banner.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -9,22 +10,29 @@
   padding: 40px 20px;
   border-radius: 8px;
   overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .hero__title {
-  font-size: 2.5rem;
+  font-size: 68px;
   font-weight: 700;
-  color: #333;
   margin-bottom: 15px;
   line-height: 1.2;
+  z-index: 1;
+}
+
+.hero__title-secondary {
+  font-size: 60px;
+  z-index: 1;
 }
 
 .hero__subtitle {
-  font-size: 1.2rem;
-  color: #666;
+  font-size: 16px;
+  color: var(--primary-text-color);
   margin-bottom: 25px;
   line-height: 1.5;
   max-width: 500px;
+  z-index: 1;
 }
 
 .hero__buttons {
@@ -33,67 +41,60 @@
   margin-bottom: 20px;
 }
 
-.button {
-  padding: 10px 20px;
-  font-size: 1rem;
-  font-weight: 600;
-  color: #fff;
-  background-color: #ff6600;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.button:hover,
-.button:focus {
-  background-color: #e65a00;
-}
-
-.hero__button--secondary {
-  background-color: #333;
-}
-
-.hero__button--secondary:hover,
-.hero__button--secondary:focus {
-  background-color: #222;
-}
-
-.hero__image {
-  position: absolute;
-  right: 10px;
-  bottom: 0;
-  max-width: 400px;
-  width: 50%;
-  height: auto;
-  border-radius: 8px;
-  object-fit: cover;
-  z-index: 1;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
 @media (max-width: 768px) {
   .hero {
     padding: 20px;
   }
 
+  .hero_container {
+    background-image: url(../img/hero/group-portrait-adorable-puppies.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 5px 20px 20px 20px;
+  }
+
   .hero__title {
-    font-size: 2rem;
+    font-size: 50px;
+  }
+
+  .hero__title-secondary {
+    font-size: 30px;
   }
 
   .hero__subtitle {
-    font-size: 1rem;
-  }
-
-  .hero__image {
-    position: static;
-    width: 100%;
-    margin-top: 20px;
-    box-shadow: none;
+    font-size: 12px;
   }
 
   .hero__buttons {
     flex-direction: column;
     gap: 10px;
+  }
+}
+
+@media (min-width: 769px) {
+  .hero__title {
+    font-size: 55px;
+  }
+
+  .hero__title-secondary {
+    font-size: 35px;
+  }
+  .hero__subtitle {
+    font-size: 12px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .hero__title {
+    font-size: 60px;
+  }
+
+  .hero__title-secondary {
+    font-size: 40px;
+  }
+
+  .hero__subtitle {
+    font-size: 14px;
   }
 }

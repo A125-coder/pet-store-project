@@ -1,10 +1,10 @@
-.header-nav {
-  background-color: #f8f8f8;
+.header__nav {
+  background-color: var(--primary-background-color);
 }
 .header__nav-container {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   padding: 10px 20px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
@@ -36,10 +36,9 @@
 
 .header__menu-link:hover,
 .header__menu-link:focus {
-  color: #ff6600;
+  color: var(--secondary-state-color);
 }
 
-/* Пошук */
 .header__search {
   display: flex;
   align-items: center;
@@ -49,44 +48,46 @@
 .header__search-input {
   padding: 5px 10px;
   font-size: 1rem;
-  border: 1px solid #ccc;
+  border: 1px solid var(--primary-brand-color);
   border-radius: 4px;
   transition: border-color 0.3s ease;
 }
 
 .header__search-input:focus {
-  border-color: #ff6600;
+  border-color: var(--secondary-state-color);
   outline: none;
 }
 
 .header__search-button {
   background: none;
   border: none;
-  font-size: 1.2rem;
+  font-size: 16px;
   cursor: pointer;
-  color: #333;
   transition: color 0.3s ease;
 }
 
 .header__search-button:hover,
 .header__search-button:focus {
-  color: #ff6600;
+  color: var(--primary-brand-color);
 }
 
 .header__cta {
   padding: 8px 16px;
-  background-color: #ff6600;
-  color: #fff;
+  background-color: var(--primary-brand-color);
+  color: var(--card-background-color);
   border: none;
   border-radius: 4px;
-  font-size: 1rem;
+  font-size: 16px;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
 
 .header__cta:hover,
 .header__cta:focus {
-  background-color: #e65a00;
+  background-color: transparent;
+  color: var(--primary-brand-color);
+  border: 1px solid var(--primary-brand-color);
+  padding: 8px 15px;
 }
 
 @media (max-width: 768px) {
